@@ -1,0 +1,14 @@
+package ch04;
+
+public class tutorial {
+
+	public static void main(String[] args) {
+			System.out.println("hi");
+			
+			System.out.println(1+2);
+			System.out.println(6-9);
+			System.out.println(3*5);
+			System.out.println(4/8);//주석
+	}
+
+}
