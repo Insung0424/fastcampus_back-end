@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name" : "tomas",
   "age" : 12,
@@ -12,4 +13,20 @@
       "TYPE" : ""}
   ]
 
+=======
+{
+  "name" : "tomas",
+  "age" : 12,
+  "cars" : [
+    {
+      "name" : "K5",
+      "car_number" : "11a2222",
+      "TYPE" : ""},
+    {
+      "name" : "Q5",
+      "car_number" : "11b3333",
+      "TYPE" : ""}
+  ]
+
+>>>>>>> 9e00205c9a868278d2cee905d8ff0d37ecbb88a6
 }

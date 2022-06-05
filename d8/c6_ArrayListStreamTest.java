@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package ch06;
 
 import java.util.ArrayList;
@@ -24,3 +25,31 @@ public class ArrayListStreamTest {
 			sList.stream().filter(s->s.length() >= 5).forEach(s->System.out.print(s));
 	}		
 }
+=======
+package ch06;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Stream;
+
+public class ArrayListStreamTest {
+
+	public static void main(String[] args) {
+
+			List<String> sList = new ArrayList<String>();
+			sList.add("Tomas");
+			sList.add("Jack");
+			sList.add("Lee");
+			sList.add("Kim");
+			
+			Stream<String> stream = sList.stream();
+			stream.forEach(s->System.out.println(s));
+			
+			sList.stream().sorted().forEach(s->System.out.print(s+"\t"));
+			System.out.println();
+			sList.stream().map(s->s.length()).forEach(n->System.out.print(n+"\t"));
+			System.out.println();
+			sList.stream().filter(s->s.length() >= 5).forEach(s->System.out.print(s));
+	}		
+}
+>>>>>>> 9e00205c9a868278d2cee905d8ff0d37ecbb88a6

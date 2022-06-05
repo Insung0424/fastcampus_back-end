@@ -18,7 +18,11 @@ public class wishListRepositoryTest {
         wishList.setTitle("title");
         wishList.setCategory("category");
         wishList.setAddress("address");
+<<<<<<< HEAD
         wishList.setRoadAddress("readAddress");
+=======
+        wishList.setReadAddress("readAddress");
+>>>>>>> 9e00205c9a868278d2cee905d8ff0d37ecbb88a6
         wishList.setHomePageLink("");
         wishList.setImageLink("");
         wishList.setVisit(false);
@@ -47,7 +51,11 @@ public class wishListRepositoryTest {
         var saveEntity= wishLIstRepository.save(expected); //저장한뒤 다시 호출
 
         Assertions.assertEquals("update test",saveEntity.getTitle()); //원래 있던것을 불러옴
+<<<<<<< HEAD
         Assertions.assertEquals(1, wishLIstRepository.findAll().size()); // 그러므로 숫자는 변경되지않음 1유지
+=======
+        Assertions.assertEquals(1, wishLIstRepository.listAll().size()); // 그러므로 숫자는 변경되지않음 1유지
+>>>>>>> 9e00205c9a868278d2cee905d8ff0d37ecbb88a6
     }
 
     @Test
@@ -66,7 +74,11 @@ public class wishListRepositoryTest {
         wishLIstRepository.save(wishListEntity); //데이터를 만들고 저장함
 
         wishLIstRepository.deleteById(1); // 그 데이터를 삭제함
+<<<<<<< HEAD
         int count = wishLIstRepository.findAll().size(); // 그래서 크기는 0
+=======
+        int count = wishLIstRepository.listAll().size(); // 그래서 크기는 0
+>>>>>>> 9e00205c9a868278d2cee905d8ff0d37ecbb88a6
         Assertions.assertEquals(0,count); // 예상은 0
 
     }
@@ -79,7 +91,11 @@ public class wishListRepositoryTest {
         var wishListEntity2 = create();
         wishLIstRepository.save(wishListEntity2); //데이터를 만들고 저장함
 
+<<<<<<< HEAD
         int count = wishLIstRepository.findAll().size(); // 그래서 크기는 0,1 합해서 2
+=======
+        int count = wishLIstRepository.listAll().size(); // 그래서 크기는 0,1 합해서 2
+>>>>>>> 9e00205c9a868278d2cee905d8ff0d37ecbb88a6
         Assertions.assertEquals(2,count); // 예상은 2
     }
 

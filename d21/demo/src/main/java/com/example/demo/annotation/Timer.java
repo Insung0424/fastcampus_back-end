@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.example.demo.annotation;
 
 import java.lang.annotation.ElementType;
@@ -9,3 +10,16 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Timer {
 }
+=======
+package com.example.demo.annotation;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+@Target({ElementType.TYPE, ElementType.METHOD})
+@Retention(RetentionPolicy.RUNTIME)
+public @interface Timer {
+}
+>>>>>>> 9e00205c9a868278d2cee905d8ff0d37ecbb88a6

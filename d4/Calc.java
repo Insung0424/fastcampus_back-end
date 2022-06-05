@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package ch11;
 
 public interface Calc {
@@ -11,3 +12,18 @@ public interface Calc {
 
 		
 }
+=======
+package ch11;
+
+public interface Calc {
+		double PI = 3.14;
+		int ERROR = -999999999;
+		
+		int add(int num1, int num2);
+		int substract(int num1, int num2);
+		int times(int num1, int num2);
+		int divide(int num1, int num2);
+
+		
+}
+>>>>>>> 9e00205c9a868278d2cee905d8ff0d37ecbb88a6

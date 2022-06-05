@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package ch16;
 
 import java.io.BufferedInputStream;
@@ -36,3 +37,43 @@ public class FIleCopyTest {
 	}
 
 }
+=======
+package ch16;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.Socket;
+
+public class FIleCopyTest {
+
+	public static void main(String[] args) {
+		
+			long millisecond  = 0;
+			
+			try(BufferedInputStream bis = new BufferedInputStream(new FileInputStream("a.zip"));
+					BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream("copy.zip"))){
+				millisecond = System.currentTimeMillis();
+				
+				int i;
+				while( (i=bis.read()) != -1){
+					bos.write(i);
+				}
+				
+				millisecond = 	System.currentTimeMillis() - millisecond;	
+			} catch(IOException e) {
+				e.printStackTrace();
+			}
+			System.out.println(millisecond + "use");
+			
+//			Socket socket = new Socket();
+//			BufferedReader br = new BufferedReader (new InputStreamReader(socket.getInputStream()));
+//				br.readLine();
+	}
+
+}
+>>>>>>> 9e00205c9a868278d2cee905d8ff0d37ecbb88a6

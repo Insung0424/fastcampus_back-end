@@ -50,7 +50,11 @@ abstract public class MemoryDbRepositoryAbstract<T extends MemoryDbEntity> imple
     }
 
     @Override
+<<<<<<< HEAD
     public List<T> findAll() {
+=======
+    public List<T> listAll() {
+>>>>>>> 9e00205c9a868278d2cee905d8ff0d37ecbb88a6
         return db;
     }
 }

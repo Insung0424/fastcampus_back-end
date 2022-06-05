@@ -3,7 +3,10 @@ package com.example.restaurant.wishlist.entity;
 import com.example.restaurant.db.MemoryDbEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+<<<<<<< HEAD
 import lombok.EqualsAndHashCode;
+=======
+>>>>>>> 9e00205c9a868278d2cee905d8ff0d37ecbb88a6
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
@@ -11,12 +14,19 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
+<<<<<<< HEAD
 @EqualsAndHashCode(callSuper=false)
+=======
+>>>>>>> 9e00205c9a868278d2cee905d8ff0d37ecbb88a6
 public class WishListEntity extends MemoryDbEntity {
     private String title; // 음식명 , 장소명
     private String category; // 카테고리
     private String address; // 주소
+<<<<<<< HEAD
     private String roadAddress; //도로명
+=======
+    private String readAddress; //도로명
+>>>>>>> 9e00205c9a868278d2cee905d8ff0d37ecbb88a6
     private String homePageLink; // 홈페이지
     private String imageLink; // 음식 또는 가게이미지
     private boolean isVisit; //방문여부

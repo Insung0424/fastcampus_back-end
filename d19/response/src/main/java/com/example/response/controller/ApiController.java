@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.example.response.controller;
 
 import com.example.response.dto.User;
@@ -28,3 +29,35 @@ public class ApiController {
 
 
 }
+=======
+package com.example.response.controller;
+
+import com.example.response.dto.User;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("/api")
+public class ApiController {
+
+    @GetMapping("/text")
+    public String text(@RequestParam String account){
+        return account;
+    }
+
+    //req -> object mapper -> object -> method ->object -> object mapper ->json ->response
+    @PostMapping("/json")
+    public User json(@RequestBody User user){
+        return user; // 200 ok
+    }
+
+    //ResponseEntity활용
+    @PutMapping("/put")
+    public ResponseEntity<User> put(@RequestBody User user){
+        return ResponseEntity.status(HttpStatus.CREATED).body(user);
+    }                               //생성시에는 201
+
+
+}
+>>>>>>> 9e00205c9a868278d2cee905d8ff0d37ecbb88a6
