@@ -1,12 +1,9 @@
 
 package org.example;
 
-import org.example.repository.TodoRepository;
-import org.example.service.TodoService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
 public class TodoSeverApplication {
     public static void main(String[] args) {
         SpringApplication.run(TodoSeverApplication.class,args);
