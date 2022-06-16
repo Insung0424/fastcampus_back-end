@@ -19,7 +19,7 @@ class UserTest {
 
         System.out.println(">>> "+user);//toString이 생략되어있음
 
-        User user1 = new User("agdistis","agdistis@naver.com", LocalDateTime.now(), LocalDateTime.now());
+        User user1 = new User(null,"agdistis","agdistis@naver.com", LocalDateTime.now(), LocalDateTime.now());
         User user2 = new User("agdistis","agdistis@naver.com");
 
         User user3 = User.builder().name("agdistis").email("agdistis@naver.com").build();

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5d56e5d9-358f-4bd7-93f3-4d286baf7997" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/d31.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book.manager/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book.manager/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book.manager/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book.manager/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book.manager/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book.manager/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book.manager/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book.manager/src/main/java/com/fastcampus/jpa/book/manager/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book.manager/src/main/java/com/fastcampus/jpa/book/manager/Controller/HelloWorldController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book.manager/src/main/java/com/fastcampus/jpa/book/manager/domain/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book.manager/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book.manager/src/main/resources/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book.manager/src/main/resources/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book.manager/src/test/java/com/fastcampus/jpa/book/manager/ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book.manager/src/test/java/com/fastcampus/jpa/book/manager/Controller/HelloWorldControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/book.manager/src/test/java/com/fastcampus/jpa/book/manager/domain/UserTest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2AetuBUOLRIw9nxwHnW0j0qEwq3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/agdis/github/d31/demo"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="5d56e5d9-358f-4bd7-93f3-4d286baf7997" name="변경" comment="" />
+      <created>1655382101862</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1655382101862</updated>
+    </task>
+    <servers />
+  </component>
+</project>
