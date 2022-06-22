@@ -6,13 +6,16 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.annotation.Transient;
-import org.springframework.data.domain.Sort;
+import org.springframework.data.domain.*;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.springframework.data.domain.ExampleMatcher.GenericPropertyMatchers.contains;
+import static org.springframework.data.domain.ExampleMatcher.GenericPropertyMatchers.endsWith;
 
 
 @SpringBootTest
@@ -22,7 +25,6 @@ class UserRepositoryTest {
     private UserRepository userRepository;
 
     @Test
-    @Transactional
     void crud(){
 //        h2 를 연결 간단확인용
 //        userRepository.save(new User());
@@ -67,8 +69,60 @@ class UserRepositoryTest {
 //        System.out.println(user); //
 
 //        Optional<User> user = userRepository.findById(1l);
-        User user = userRepository.findById(1l).orElse(null);
-        System.out.println(user);
+//        User user = userRepository.findById(1l).orElse(null);
+//        System.out.println(user);
+
+//        userRepository.save(new User("newMartin","newMartin@fastcampus.com"));
+//        userRepository.flush();
+//        userRepository.findAll().forEach(System.out::println);
+        // 새 객체 저장(6번) 하고 모두 찾아옴  위 와 아래 같은 결과값
+//        userRepository.saveAndFlush(new User("newMartin","newMartin@fastcampus.com"));
+//        userRepository.findAll().forEach(System.out::println);
+
+//        Long count = userRepository.count(); // 저장되있는 갯수 유저객체수를 반환
+//        System.out.println(count);
+
+//        boolean exists = userRepository.existsById(1l); //해당 entity 가 존재 하는지 확인
+//        System.out.println(exists);
+
+//        userRepository.delete(userRepository.findById(1l).orElseThrow(RuntimeException::new));
+//        userRepository.deleteAllById(Collections.singleton(1L)); //delete 전에 select가 한번 나오는 이유
+//        userRepository.findAll().forEach(System.out::println); //존재하는지 확인작업
+
+//        userRepository.deleteAll(userRepository.findAllById(Lists.newArrayList(1L,3L)));
+        //1번 3번 선택해서 삭제
+//        userRepository.findAll().forEach(System.out::println);
+
+        // 검색후 확인해서 삭제가 아니라 바로 삭제하는 방식
+//        userRepository.deleteAllInBatch();
+////userRepository.deleteInBatch(userRepository.findAllById(Lists.newArrayList(1L, 3L))); 위로 변경됬다고 함
+//        userRepository.findAll().forEach(System.out::println);
+
+        //----------------------------페이징-----------------------
+//        Page<User> users = userRepository.findAll(PageRequest.of(1,3));
+//        System.out.println(users); //Page 2 of 2 containing com.fastcampus.jpa.bookmanager.domain.User instances
+//        System.out.println("totalElements :"+users.getTotalElements());//totalElements :5
+//        System.out.println("totalPages: "+users.getTotalPages());//totalPages: 2
+//        System.out.println("numberOfElements:"+ users.getNumberOfElements());//numberOfElements:2
+//        System.out.println("sort: "+users.getSort());//sort: UNSORTED
+//        System.out.println("size: "+ users.getSize());//size: 3
+//        users.getContent().forEach(System.out::println);
+
+//        ExampleMatcher matcher = ExampleMatcher.matching()
+////                .withIgnorePaths("name")
+//                .withMatcher("email",endsWith());
+//        Example<User> example = Example.of(new User("ma","fastcampus.com"),matcher);
+//        userRepository.findAll(example).forEach(System.out::println);
+
+//        Example<User> example = Example.of(new User("ma","fastcampus.com"));
+//        userRepository.findAll(example).forEach(System.out::println); // name,email 을 가져옴
+
+//        User user = new User();
+//        user.setEmail("slow");
+//        ExampleMatcher matcher = ExampleMatcher.matching().withMatcher("email",contains());
+//        Example<User> example = Example.of(user,matcher);
+//          //
+//        userRepository.findAll(example).forEach(System.out::println);
     }
 
 }
