@@ -15,12 +15,22 @@ class UserRepositoryTest {
     @Autowired
     private UserRepository userRepository;
 
-    @Test
-    void crud(){ //기본 쿼리 동작
-        userRepository.save(new User());
+//    @Test
+//    void crud(){ //기본 쿼리 동작
+//        userRepository.save(new User());
+//
+//        System.out.println(">>> "+ userRepository.findAll());
+//    }
 
-        System.out.println(">>> "+ userRepository.findAll());
+    @Test
+    void crud(){
+        userRepository.save(new User("david","david@fastcampus.com"));
+        User user = userRepository.findById(1L).orElseThrow(RuntimeException::new);
+        user.setEmail("martin-updated@fastcampus.com");
+
+        userRepository.save(user);
     }
+
 
 
 }
