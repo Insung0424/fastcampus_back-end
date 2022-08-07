@@ -31,6 +31,11 @@ class UserRepositoryTest {
         userRepository.save(user);
     }
 
+    @Test
+    void select(){
+        System.out.println(userRepository.findByName("david"));
+    }
+
 
 
 }
